@@ -1,22 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import PlayerAnimation from '../components/PlayerAnimation';
 
 function Login() {
   return (
     <StyledLogin>
-      <button
-        type="button"
-      >
-        <Link to="/search">
-          Botao
-        </Link>
-      </button>
+      <PlayerAnimation />
     </StyledLogin>
   );
 }
 
 const StyledLogin = styled.div`
+  background-color: #333333;
+  min-width: 100vw;
+  min-height: 100vh;
 `;
 
 export default Login;
